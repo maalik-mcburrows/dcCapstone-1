@@ -16,7 +16,7 @@ function App() {
           <main>
 
 
-
+            <Menu />
             <div className="wrapper">
                 <Route exact path="/" component={VerticalMenu}/>
                 <Route exact path="/" component={Map} />
@@ -24,8 +24,10 @@ function App() {
                 <>
                   <Route exact path="/" component={News} />
                 </>
-                <Route path="/exercises" component={Exercise} />
             </div>
+            <div className="classRouterDiv" >
+                    <Route id="sidePage" path="/case" component={Case} />
+                  </div>
           </main>
         </Switch>
       </Router>
@@ -34,3 +36,29 @@ function App() {
 }
 
 export default App;
+
+{/* <div className="App">
+      <Router>
+        <Switch>
+          <main>
+            <div>
+               <Menu />
+              <div className="wrapper" > 
+                  <Route exact path="/" component={VerticalMenu}/>
+                  <Route exact path="/" component={Map} />
+                  <Route exact path="/" component={CovidData} />
+                  <>
+                    <Route exact path="/" component={News} />
+                  </>
+                  
+              </div>
+              <div className="classRouterDiv" >
+                    <Route id="sidePage" path="/case" component={Case} />
+                  </div>
+              
+            </div>
+            
+          </main>
+        </Switch>
+      </Router>
+    </div> */}
