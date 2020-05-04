@@ -23,7 +23,7 @@ div .wrapper div #sidePage {
     font-variant: small-caps;
     color: white;
     padding: 25px;
-    background-color: rgb(72, 72, 72);
+    background-color: rgb(53, 59, 63);
     margin: auto;
     margin-bottom: 25px;
     border-radius: 15px;
@@ -37,7 +37,7 @@ div .wrapper div #sidePage {
   .caseInputDiv {
     margin-right: 10px;
     padding: 10px;
-    background-color: rgb(72, 72, 72);
+    background-color: rgb(53, 59, 63);
     border-radius: 25px;
     margin-top: 5px;
     display: block;
@@ -89,7 +89,7 @@ div .wrapper div #sidePage {
   
   .formSuccess{
     margin: auto;
-    background-color: rgb(72, 72, 72);
+    background-color: rgb(53, 59, 63);
     width: 75vw;
     padding: 25px;
     font-family: impact;
@@ -98,4 +98,8 @@ div .wrapper div #sidePage {
     font-size: 35px;
     font-variant: small-caps;
     border-radius: 15px;
+  }
+
+  #caseLink:hover {
+    color: red;
   }

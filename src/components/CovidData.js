@@ -400,14 +400,16 @@ class CovidData extends Component {
                 </div>
                 <hr />
                 <div className='lineChart'>
-                    <h1>{matchingState[0]}: 14 Day Historical(+ Test)</h1>
-                    <LineChart width={500} height={200} data={newData}>
-                        <Line type="monotone" dataKey="uv" stroke="#ff0000"  activeDot={{ r: 8 }} />
-                        <CartesianGrid stroke="#ccc" strokeDasharray="5 5"/>
-                        <XAxis dataKey="name" />
-                        <Tooltip/>
-                        <YAxis />
-                    </LineChart>
+                    <div style={{paddingTop: "20px"}}>
+                        <h1>{matchingState[0]}: 14 Day Historical(+ Test)</h1>
+                        <LineChart width={500} height={200} data={newData}>
+                            <Line type="monotone" dataKey="uv" stroke="#ff0000"  activeDot={{ r: 8 }} />
+                            <CartesianGrid stroke="#ccc" strokeDasharray="5 5"/>
+                            <XAxis dataKey="name" />
+                            <Tooltip/>
+                            <YAxis />
+                        </LineChart>
+                    </div>
                 </div>
                 <div>
                    {/* <CountryTable />  */}
