@@ -6,7 +6,7 @@ import VerticalMenu from './components/VerticalMenu';
 import Menu from './components/Menu';
 import News from './components/News';
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
-import Exercise from './components/exercise';
+import Case from './components/Case';
 
 function App() {
   return (
